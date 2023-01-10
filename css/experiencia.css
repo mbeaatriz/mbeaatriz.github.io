@@ -1,0 +1,142 @@
+.experiencia {
+  margin-top: 60px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.experiencia h3 {
+  font-size: 1.125rem;
+}
+
+.subtitulo-experiencia {
+  text-transform: uppercase;
+  font-size: 7.4rem;
+  word-break: break-all;
+  max-width: 4ch;
+  line-height: 1;
+  color: #e0e0e0;
+}
+
+.subtitulo-descricao-experiencia {
+  margin-top: 12px;
+  font-size: 1.5rem;
+  color: #525252;
+  margin-bottom: 60px;
+}
+
+.subtitulo-descricao-experiencia strong {
+  color: #141414;
+}
+.experiencia-texto {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.experiencia-empresa {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.experiencia-empresa-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 1px;
+  position: relative;
+}
+
+.experiencia-empresa-conteudo::after {
+  content: "";
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+  top: 20px;
+  left: -2px;
+}
+
+.empresa-ano {
+  position: absolute;
+  text-align: right;
+  width: 80px;
+  color: #525252;
+  font-size: 0.875rem;
+  left: -120px;
+  top: 22px;
+}
+
+.empresa-descricao p {
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #525252;
+}
+
+.empresa-habilidades-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.empresa-habilidades-tags li {
+  font-size: 0.875rem;
+  color: #141414;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .experiencia {
+    gap: 50px;
+  }
+  .subtitulo-descricao-experiencia {
+    font-size: 1.125rem;
+  }
+  .subtitulo-experiencia {
+    font-size: 5rem;
+  }
+  .experiencia-empresa-conteudo {
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .experiencia {
+    margin-top: 32px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .experiencia h2 {
+    color: #141414;
+  }
+  .subtitulo-experiencia {
+    font-size: 2.5rem;
+    word-break: normal;
+    text-transform: none;
+  }
+  .subtitulo-descricao-experiencia {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .experiencia-empresa-conteudo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .subtitulo-experiencia {
+    font-size: 1.8rem;
+  }
+}
